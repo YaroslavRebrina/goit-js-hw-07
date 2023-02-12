@@ -15,14 +15,12 @@ galleryRef.innerHTML = galleryItems
   )
   .join("");
 
-const onImgClick = (e) => {
-  if (e.target.nodeName !== "IMG") return;
 
   let lightbox = new SimpleLightbox(`.gallery__item`, {
     captionsData: `alt`,
     captionDelay: 250,
     captionPosition: "bottom",
   });
-};
 
-galleryRef.addEventListener("click", onImgClick);
+
+

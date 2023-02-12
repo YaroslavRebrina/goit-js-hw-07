@@ -21,6 +21,7 @@ galleryRef.innerHTML = galleryItems
   .join("");
 
 const onImgClick = (e) => {
+  e.preventDefault()
   if (e.target.nodeName !== "IMG") {
     return;
   }
